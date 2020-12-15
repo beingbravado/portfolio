@@ -1,4 +1,4 @@
-.heading{
+.blog-heading{
     font-size: 3rem;
     text-align: center;
     padding: 15px;
@@ -29,11 +29,29 @@ p{
     justify-content: center;
     width: 100%;
 }
-img{
-    width: 100%;
-    max-width: 1200px;
-}
 
 video{
     width: 100%;
+}
+
+#content-holder {
+    display: flex;
+    flex-direction: column;
+}
+
+#content-holder > .holder {
+    display: flex;
+    width: 100%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
+}
+#content-holder > .holder > .img-holder {
+    width: 100%;
+}
+#content-holder > .holder > .text-holder {
+    width: 100%;
+}
+
+.img-holder>img{
+    width: 100%;
+    max-width: 1200px;
 }
