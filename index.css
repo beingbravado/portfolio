@@ -1,0 +1,28 @@
+/* *{ */
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* width: 100%; */
+    /* z-index: -10; */
+/* } */
+.heading_img{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-direction: column; */
+    
+    /* width: 20%; */
+    /* background: url(/pc_bg.jpg) ; */
+}
+.heading_img>img{
+    width: 15%;
+    align-items: center;
+}
+
+.name{
+    text-align: center;
+    font-size: 3rem;
+}
+
+video{
+    width: 100%;
+}

@@ -1,0 +1,35 @@
+.heading{
+    font-size: 3rem;
+    text-align: center;
+}
+.images{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+.images>img{
+    width: 100%;
+}
+.profile>img{
+    width: 100%;
+}
+.rating>img{
+    width: 100%;
+}
+.img_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+.img_content>img{
+    width: 100%;
+    max-width: 800px;
+}
+.img_content>div{
+    font-size: 2rem;
+}
