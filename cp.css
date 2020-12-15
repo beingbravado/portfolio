@@ -1,6 +1,12 @@
 .heading{
-    font-size: 3rem;
+    font-size: 24px;
     text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: auto;
+    padding: 10px;
+    background-image: linear-gradient(to right, red , yellow);
+    /* border-bottom: 1px solid black; */
 }
 .images{
     display: flex;
@@ -19,6 +25,14 @@
 .rating>img{
     width: 100%;
 }
+#rating_graph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    max-width: 700px;
+}
 .img_content{
     display: flex;
     justify-content: center;
@@ -28,8 +42,83 @@
 }
 .img_content>img{
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
 }
 .img_content>div{
-    font-size: 2rem;
+    font-size: 2vw;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Main Footer Heading */
+footer > #main-footer-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 15vw;
+
+    color: #1c1c1c;
+    background-color: #ededed;
+}
+
+/* Text */
+footer > #main-footer-heading > h3 {
+    font-size: 2.5vw;
+    text-transform: uppercase;
+
+    margin-bottom: 2vw;
+}
+
+/* Footer Button */
+footer > #main-footer-heading > button {
+    width: 15vw;
+    height: 5vw;
+
+
+    border: 2px solid #1c1c1c;
+    border-radius: 10px;
+
+    background-color: rgba(0, 0, 0, 0);
+    color: #1c1c1c;
+
+    margin: 0 auto;
+
+    font-size: 1.8vw;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+/* The Footer Navigation */
+footer > #footer-nav {
+
+    display: flex;
+    justify-content: space-around;
+
+    height: 10vw;
+    width: 100%;
+
+    background-color: #000000;
+}
+
+/* Navigation Logo */
+footer > #footer-nav > #footer-logo {
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+}
+
+footer > #footer-nav > #footer-logo > a > img {
+    width: 10vw;
+    /* margin: 0 20px; */
+    padding: 10px;
 }
