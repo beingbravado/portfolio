@@ -3,6 +3,11 @@
 /* width: 100%; */
 /* z-index: -10; */
 /* } */
+p{
+  font-size: 1.2rem;
+  max-width: 1200px;
+  text-align: inherit;
+}
 .heading_img {
   display: flex;
   flex-wrap: nowrap;
@@ -16,7 +21,7 @@
 
 .name {
   text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 3rem;
   background: -webkit-linear-gradient(rgb(143, 54, 54), rgb(44, 125, 179));
   -webkit-background-clip: text;
@@ -24,11 +29,13 @@
 }
 
 .blog-heading {
-  font-size: 2vw;
-  text-align: center;
-  padding: 15px;
-  max-width: 1200px;
-  margin: auto;
+    font-size: 2.4vw;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin: auto;
+    padding: 1.6vw;
+    background-image: linear-gradient(to bottom right, rgb(19, 20, 19) , rgb(112, 104, 104));
 }
 
 .texty {
@@ -59,22 +66,23 @@ video {
   width: 100%;
 }
 
-#content-holder {
+.content-holder {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-#content-holder > .holder {
+.content-holder > .holder {
   display: flex;
   /* align-items: center; */
   justify-content: center;
   width: 100%;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
-#content-holder > .holder > .img-holder {
+.content-holder > .holder > .img-holder {
   width: 100%;
 }
-#content-holder > .holder > .text-holder {
+.content-holder > .holder > .text-holder {
   width: 100%;
 }
 
@@ -83,7 +91,7 @@ video {
   max-width: 1200px;
 }
 
-#content-holder > .holder > .text-holder {
+.content-holder > .holder > .text-holder {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,10 +102,14 @@ video {
 
   color: #1c1c1c;
   background-color: #ededed;
-  background-image: linear-gradient(to bottom right, rgb(177, 150, 92) , rgb(255, 255, 255));
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(177, 150, 92),
+    rgb(255, 255, 255)
+  );
 
   font-size: 1.3vw;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .holder > .text-holder > h3 {
@@ -113,77 +125,136 @@ video {
   font-size: 1.6vw;
 }
 
+/* .odd{
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.even{
+  flex-wrap: wrap-reverse;
+} */
+
+.gymslider{
+  max-width: 1000px;
+  margin: auto;
+}
+
 
 /* Footer */
 footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* Main Footer Heading */
 footer > #main-footer-heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    height: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 15vw;
 
-    color: #1c1c1c;
-    background-color: #ededed;
+  color: #1c1c1c;
+  background-color: #ededed;
 }
 
 /* Text */
 footer > #main-footer-heading > h3 {
-    font-size: 2.5vw;
-    text-transform: uppercase;
+  font-size: 2.5vw;
+  text-transform: uppercase;
 
-    margin-bottom: 2vw;
+  margin-bottom: 2vw;
 }
 
 /* Footer Button */
 footer > #main-footer-heading > button {
-    width: 15vw;
-    height: 5vw;
+  width: 15vw;
+  height: 5vw;
 
+  border: 2px solid #1c1c1c;
+  border-radius: 10px;
 
-    border: 2px solid #1c1c1c;
-    border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #1c1c1c;
 
-    background-color: rgba(0, 0, 0, 0);
-    color: #1c1c1c;
+  margin: 0 auto;
 
-    margin: 0 auto;
+  font-size: 1.8vw;
+  font-weight: 700;
 
-    font-size: 1.8vw;
-    font-weight: 700;
-
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* The Footer Navigation */
 footer > #footer-nav {
+  display: flex;
+  justify-content: space-around;
 
-    display: flex;
-    justify-content: space-around;
+  height: 10vw;
+  width: 100%;
 
-    height: 10vw;
-    width: 100%;
-
-    background-color: #1c1c1c;
+  background-color: #1c1c1c;
 }
 
 /* Navigation Logo */
 footer > #footer-nav > #footer-logo {
-    display: flex;
-    align-self: center;
-    justify-content: flex-end;
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
 }
 
 footer > #footer-nav > #footer-logo > a > img {
-    width: 10vw;
-    /* margin: 0 20px; */
-    padding: 10px;
+  width: 10vw;
+  /* margin: 0 20px; */
+  padding: 10px;
+}
+
+
+/* slider */
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: gray;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.bigslide{
+  display: flex;
 }
